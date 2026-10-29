@@ -136,7 +136,21 @@ export default function Footer() {
           <div className="w-1/4 max-lg:w-5/12 max-md:w-full max-md:order-3"><p className="small">Disclaimer: Upon completion of the project&apos;s materialization, minor deviations in the appearance of the facade or architectural details may occur compared to the presented rendering.</p><div className="mt-4 flex flex-col max-md:w-full"><span className="small">For direct inquiries, our team is available at</span><p><a href={site.phone.href} className="text-golden detail">{site.phone.display}</a></p></div></div>
         </div>
       </div>
-      <div className="pointer-events-none -mt-70 w-full overflow-clip select-none max-2xl:-mt-50 max-lg:-mt-30 max-lg:flex max-lg:items-center max-lg:justify-end max-md:mt-4"><Image src={front} alt="footer" loading="eager" className="front h-auto w-full max-w-none max-lg:min-w-400 max-lg:translate-x-25 max-lg:object-cover max-lg:object-right max-md:min-w-190" /><div className="absolute bottom-0 left-0 h-auto w-full"><Image src={treeRight} alt="footer" className="absolute right-0 bottom-0 h-auto w-335 max-w-none max-2xl:w-250 max-lg:w-[150%] max-md:hidden" /></div></div>
+      <div className="pointer-events-none -mt-70 w-full overflow-clip select-none max-2xl:-mt-50 max-lg:-mt-30 max-lg:flex max-lg:items-center max-lg:justify-end max-md:mt-4 [mask-image:linear-gradient(to_bottom,transparent_0%,black_14%,black_100%)]">
+        <Image
+          src={front}
+          alt="footer"
+          loading="eager"
+          className="front h-auto w-full max-w-none origin-bottom-right scale-110 lg:scale-115 2xl:scale-120 max-lg:min-w-400 max-lg:translate-x-25 max-lg:object-cover max-lg:object-right max-md:min-w-190 transition-transform duration-500"
+        />
+        <div className="absolute bottom-0 left-0 h-auto w-full">
+          <Image
+            src={treeRight}
+            alt="footer"
+            className="absolute right-0 bottom-0 h-auto w-[55vw] min-w-250 max-w-none origin-bottom-right scale-115 lg:scale-125 max-2xl:w-250 max-lg:w-[150%] max-md:hidden drop-shadow-md transition-transform duration-500"
+          />
+        </div>
+      </div>
       <div className="absolute bottom-15 left-0 z-10 w-full max-md:bottom-6"><div className="wrapper flex items-end justify-between max-lg:flex-col-reverse max-lg:items-center max-lg:gap-4 max-md:gap-3"><div className="small text-cream w-1/6 max-lg:w-full max-lg:text-center max-md:w-full max-md:text-center max-md:text-[0.625rem]">©{new Date().getFullYear()}. All Rights Reserved.</div><div className="heading-1 text-cream w-7/12 text-right font-light uppercase max-xl:w-2/3 max-lg:w-full max-lg:text-center max-md:w-full max-md:text-center"><span>Yohart Properties</span></div></div></div>
     </footer>
   );

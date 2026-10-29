@@ -8,25 +8,25 @@ export default function InstallmentMobile() {
           <div className="flex flex-col gap-6">
             <p className="heading-2 text-cream-dark">Installment plan</p>
             <ul className="divide-cream-dark/40 divide-y">
-              <li className="flex items-center justify-start gap-8 border-b border-b-green py-3">
-                <p className="heading-2 text-accent italic whitespace-nowrap">20%</p>
-                <p className="detail text-sand">Pre-contract</p>
+              <li className="flex items-center justify-start gap-6 border-b border-b-green py-3">
+                <p className="heading-2 text-accent italic whitespace-nowrap w-[2em] shrink-0">40%</p>
+                <p className="detail text-sand">Prepayment</p>
               </li>
-              <li className="flex items-center justify-start gap-8 border-b border-b-green py-3">
-                <p className="heading-2 text-accent italic whitespace-nowrap">20%</p>
-                <p className="detail text-sand">Zero level</p>
+              <li className="flex items-center justify-start gap-6 border-b border-b-green py-3">
+                <p className="heading-2 text-accent italic whitespace-nowrap w-[2em] shrink-0">20%</p>
+                <p className="detail text-sand">12 floor</p>
               </li>
-              <li className="flex items-center justify-start gap-8 border-b border-b-green py-3">
-                <p className="heading-2 text-accent italic whitespace-nowrap">20%</p>
-                <p className="detail text-sand">Structure completed</p>
+              <li className="flex items-center justify-start gap-6 border-b border-b-green py-3">
+                <p className="heading-2 text-accent italic whitespace-nowrap w-[2em] shrink-0">20%</p>
+                <p className="detail text-sand">15 floor</p>
               </li>
-              <li className="flex items-center justify-start gap-8 border-b border-b-green py-3">
-                <p className="heading-2 text-accent italic whitespace-nowrap">30%</p>
-                <p className="detail text-sand">Building 80% complete</p>
+              <li className="flex items-center justify-start gap-6 border-b border-b-green py-3">
+                <p className="heading-2 text-accent italic whitespace-nowrap w-[2em] shrink-0">5%</p>
+                <p className="detail text-sand">Blocks and Plastering</p>
               </li>
-              <li className="flex items-center justify-start gap-8 border-b border-b-green py-3">
-                <p className="heading-2 text-accent italic whitespace-nowrap">10%</p>
-                <p className="detail text-sand">Technical acceptance</p>
+              <li className="flex items-center justify-start gap-6 border-b border-b-green py-3">
+                <p className="heading-2 text-accent italic whitespace-nowrap w-[2em] shrink-0">5%</p>
+                <p className="detail text-sand">Handover</p>
               </li>
             </ul>
           </div>

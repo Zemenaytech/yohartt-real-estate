@@ -38,34 +38,34 @@ export default function Installment() {
                   </p>
                   <ul className="divide-cream-dark/40 divide-y">
                     <li className="border-b-green mb-4 flex items-center justify-start gap-4 border-b pb-4 max-lg:justify-start max-md:mb-0 max-md:gap-8 max-md:py-2">
-                      <p className="heading-2 text-accent translate-y-0 whitespace-nowrap italic max-lg:not-italic">
+                      <p className="heading-2 text-accent w-[2em] shrink-0 translate-y-0 whitespace-nowrap italic max-lg:not-italic">
+                        40%
+                      </p>
+                      <p className="detail text-sand">Prepayment</p>
+                    </li>
+                    <li className="border-b-green mb-4 flex items-center justify-start gap-4 border-b pb-4 max-lg:justify-start max-md:mb-0 max-md:gap-8 max-md:py-2">
+                      <p className="heading-2 text-accent w-[2em] shrink-0 translate-y-0 whitespace-nowrap italic max-lg:not-italic">
                         20%
                       </p>
-                      <p className="detail text-sand">Pre-contract</p>
+                      <p className="detail text-sand">12 floor</p>
                     </li>
                     <li className="border-b-green mb-4 flex items-center justify-start gap-4 border-b pb-4 max-lg:justify-start max-md:mb-0 max-md:gap-8 max-md:py-2">
-                      <p className="heading-2 text-accent translate-y-0 whitespace-nowrap italic max-lg:not-italic">
+                      <p className="heading-2 text-accent w-[2em] shrink-0 translate-y-0 whitespace-nowrap italic max-lg:not-italic">
                         20%
                       </p>
-                      <p className="detail text-sand">Zero level</p>
+                      <p className="detail text-sand">15 floor</p>
                     </li>
                     <li className="border-b-green mb-4 flex items-center justify-start gap-4 border-b pb-4 max-lg:justify-start max-md:mb-0 max-md:gap-8 max-md:py-2">
-                      <p className="heading-2 text-accent translate-y-0 whitespace-nowrap italic max-lg:not-italic">
-                        20%
+                      <p className="heading-2 text-accent w-[2em] shrink-0 translate-y-0 whitespace-nowrap italic max-lg:not-italic">
+                        5%
                       </p>
-                      <p className="detail text-sand">Structure completed</p>
+                      <p className="detail text-sand">Blocks and Plastering</p>
                     </li>
                     <li className="border-b-green mb-4 flex items-center justify-start gap-4 border-b pb-4 max-lg:justify-start max-md:mb-0 max-md:gap-8 max-md:py-2">
-                      <p className="heading-2 text-accent translate-y-0 whitespace-nowrap italic max-lg:not-italic">
-                        30%
+                      <p className="heading-2 text-accent w-[2em] shrink-0 translate-y-0 whitespace-nowrap italic max-lg:not-italic">
+                        5%
                       </p>
-                      <p className="detail text-sand">Building 80% complete</p>
-                    </li>
-                    <li className="border-b-green mb-4 flex items-center justify-start gap-4 border-b pb-4 max-lg:justify-start max-md:mb-0 max-md:gap-8 max-md:py-2">
-                      <p className="heading-2 text-accent translate-y-0 whitespace-nowrap italic max-lg:not-italic">
-                        10%
-                      </p>
-                      <p className="detail text-sand">Technical acceptance</p>
+                      <p className="detail text-sand">Handover</p>
                     </li>
                   </ul>
                 </div>

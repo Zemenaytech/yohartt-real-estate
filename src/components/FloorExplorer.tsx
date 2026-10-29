@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
-import towerRender from '@/assets/img/tower-render.jpg';
+import towerRender from '@/assets/img/tower-render.png';
 import {
   DEFAULT_FLOOR,
   FACADE_RIGHT_X,
@@ -93,17 +93,17 @@ export function FloorExplorer({ interest = 'Yohartt Tower', children }: { intere
           <Image
             src={towerRender}
             alt="Yohartt Tower rendering with each floor selectable"
-            sizes="(max-width: 899px) 90vw, 480px"
-            placeholder="blur"
+            sizes="(max-width: 899px) 90vw, (max-width: 1440px) 560px, 680px"
+            priority
           />
           <svg className="explorer__svg" viewBox={`0 0 ${VW} ${VH}`} preserveAspectRatio="none" role="group" aria-label="Tower floors">
             <defs>
               <mask id="floorMask">
-                <rect width={VW} height={VH} fill="#fff" />
+                <polygon points="104,181 300,59 394,175 519,290 519,700 575,750 575,985 104,985" fill="#fff" />
                 <polygon ref={cutRef} points={INITIAL_POINTS} fill="#000" />
               </mask>
             </defs>
-            <rect className="explorer__dim" width={VW} height={VH} mask="url(#floorMask)" />
+            <polygon className="explorer__dim" points="104,181 300,59 394,175 519,290 519,700 575,750 575,985 104,985" mask="url(#floorMask)" />
             <g>
               {FLOORS.map((f) => (
                 <polygon

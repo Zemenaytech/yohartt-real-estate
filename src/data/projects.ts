@@ -3,7 +3,7 @@ import completedResidence from '@/assets/img/completed-residence.jpg';
 import siteConcretePour from '@/assets/img/site-concrete-pour.jpg';
 import siteRebarSkyline from '@/assets/img/site-rebar-skyline.jpg';
 import siteStructure from '@/assets/img/site-structure.jpg';
-import towerRender from '@/assets/img/tower-render.jpg';
+import towerRender from '@/assets/img/tower-render.png';
 import interior1 from '@/assets/home/residences-options/1.webp';
 import interior2 from '@/assets/home/residences-options/2.webp';
 import balconyImg from '@/assets/home/amenities-options/balcony.webp';

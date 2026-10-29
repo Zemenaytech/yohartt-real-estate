@@ -8,7 +8,7 @@ export default function Hero() {
       <video
         muted
         playsInline
-        preload="none"
+        preload="auto"
         className="block h-full w-full object-cover"
       ></video>
 

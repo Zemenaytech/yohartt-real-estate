@@ -83,79 +83,103 @@ export default function Intro() {
       ".loader p.heading-3"
     );
 
+    const revealTitle = (): void => {
+      const title = document.querySelector<HTMLElement>(
+        "div.flex.items-end.opacity-0"
+      );
+
+      if (!title) return;
+
+      const h1 = title.querySelector<HTMLHeadingElement>("h1");
+
+      if (!h1) return;
+
+      if (!h1.dataset.split) {
+        const text = h1.textContent ?? "";
+        h1.textContent = "";
+
+        const fragment = document.createDocumentFragment();
+
+        [...text].forEach((ch, i) => {
+          const span = document.createElement("span");
+
+          span.textContent = ch === " " ? "\u00A0" : ch;
+          span.style.display = "inline-block";
+          span.style.opacity = "0";
+          span.style.transform = "translateY(2rem)";
+
+          span.style.transition =
+            `opacity .9s cubic-bezier(0.215, 0.61, 0.355, 1) ${i * 50}ms,` +
+            ` transform .9s cubic-bezier(0.215, 0.61, 0.355, 1) ${i * 50}ms`;
+
+          fragment.appendChild(span);
+        });
+
+        h1.appendChild(fragment);
+        h1.dataset.split = "1";
+      }
+
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          title.style.transition = "opacity .8s ease-out";
+          title.style.opacity = "1";
+
+          Array.from(h1.children).forEach((child) => {
+            if (!(child instanceof HTMLElement)) return;
+
+            child.style.opacity = "1";
+            child.style.transform = "translateY(0)";
+          });
+        });
+      });
+    };
+
     if (hero) {
       hero.muted = true;
+      hero.loop = false;
 
-      hero.src = window.matchMedia("(max-width: 600px)").matches
+      const targetSrc = window.matchMedia("(max-width: 600px)").matches
         ? heroMobileVideo
         : heroVideo;
 
-      hero.load();
+      // Only assign src and load if not already set to this source
+      if (!hero.src || !hero.src.endsWith(targetSrc)) {
+        hero.src = targetSrc;
+        hero.load();
+      }
 
       const onEnded = (): void => {
-        
-        const title = document.querySelector<HTMLElement>(
-          "div.flex.items-end.opacity-0"
-        );
+        revealTitle();
+      };
 
-        if (!title) return;
-
-        const h1 = title.querySelector<HTMLHeadingElement>("h1");
-
-        if (!h1) return;
-
-        if (!h1.dataset.split) {
-          const text = h1.textContent ?? "";
-          h1.textContent = "";
-
-          const fragment = document.createDocumentFragment();
-
-          [...text].forEach((ch, i) => {
-            const span = document.createElement("span");
-
-            span.textContent = ch === " " ? "\u00A0" : ch;
-            span.style.display = "inline-block";
-            span.style.opacity = "0";
-            span.style.transform = "translateY(2rem)";
-
-            span.style.transition =
-              `opacity .9s cubic-bezier(0.215, 0.61, 0.355, 1) ${i * 50}ms,` +
-              ` transform .9s cubic-bezier(0.215, 0.61, 0.355, 1) ${i * 50}ms`;
-
-            fragment.appendChild(span);
-          });
-
-          h1.appendChild(fragment);
-          h1.dataset.split = "1";
+      const onTimeUpdate = (): void => {
+        if (hero.duration && hero.currentTime >= hero.duration - 0.25) {
+          revealTitle();
         }
-
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            title.style.transition = "opacity .8s ease-out";
-            title.style.opacity = "1";
-
-            Array.from(h1.children).forEach((child) => {
-              if (!(child instanceof HTMLElement)) return;
-
-              child.style.opacity = "1";
-              child.style.transform = "translateY(0)";
-            });
-          });
-        });
       };
 
       hero.addEventListener("ended", onEnded);
+      hero.addEventListener("timeupdate", onTimeUpdate);
 
       cleanups.push(() => {
         hero.removeEventListener("ended", onEnded);
+        hero.removeEventListener("timeupdate", onTimeUpdate);
       });
     }
 
     const finish = (): void => {
       if (hero) {
-        hero.play().catch(() => {
-          // Autoplay may be blocked by the browser.
-        });
+        hero.loop = false;
+        if (hero.ended || (hero.duration && hero.currentTime >= hero.duration - 0.25)) {
+          revealTitle();
+        } else {
+          hero.play().catch(() => {
+            // Autoplay blocked by browser - show title immediately
+            revealTitle();
+          });
+        }
+      } else {
+        revealTitle();
       }
 
       // Resume Lenis, which ScrollAnimations initially creates stopped.

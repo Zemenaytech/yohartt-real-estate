@@ -56,7 +56,7 @@
   .section-head--row .section-head__lead { margin-top: 24px; }
 
   .explorer { grid-template-columns: 1fr; }
-  .explorer__frame { height: auto; width: min(100%, 440px); margin-inline: auto; }
+  .explorer__frame { height: auto; width: min(100%, 480px); margin-inline: auto; }
 
   .delivered__grid,
   .contact__grid,

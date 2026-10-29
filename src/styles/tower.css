@@ -2,9 +2,10 @@
 
 /* ---------- Tower explorer ---------- */
 .tower-explorer {
+  position: relative;
   display: grid;
   gap: clamp(42px, 7vw, 104px);
-  padding: clamp(76px, 10vw, 150px) var(--gutter) clamp(90px, 12vw, 180px);
+  padding: clamp(36px, 5vw, 80px) var(--gutter) clamp(80px, 10vw, 140px);
   background: #f4ecd5;
   color: var(--ink);
   overflow: hidden;
@@ -71,29 +72,40 @@
 .tower-explorer__link svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; }
 
 .tower-explorer__right {
+  position: relative;
+  z-index: 1;
   width: 100%;
-  max-width: 1420px;
+  max-width: 1560px;
   margin: 0 auto;
 }
 
 /* Explorer grid inside right panel */
 .explorer {
   display: grid;
-  grid-template-columns: minmax(250px, 0.82fr) minmax(320px, 1fr);
-  align-items: start;
+  grid-template-columns: minmax(360px, 1.15fr) minmax(320px, 1fr);
+  align-items: center;
   gap: clamp(32px, 6vw, 100px);
 }
-.explorer__stage { position: relative; }
+.explorer__stage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 .explorer__frame {
   position: relative;
-  height: min(78vh, 800px);
+  height: min(88vh, 940px);
   aspect-ratio: 589 / 1080;
-  border-radius: 2px;
-  overflow: hidden;
-  background: #e8e2d4;
+  border-radius: 0;
+  overflow: visible;
+  background: transparent;
   touch-action: manipulation;
 }
-.explorer__frame img { width: 100%; height: 100%; object-fit: cover; }
+.explorer__frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 24px 45px rgba(65, 45, 20, 0.22));
+}
 .explorer__svg { position: absolute; inset: 0; width: 100%; height: 100%; }
 .explorer__dim {
   fill: rgba(30, 22, 10, 0.48);
@@ -286,13 +298,19 @@
 
 /* Responsive */
 @media (max-width: 899px) {
-  .tower-explorer { gap: 48px; padding: 72px 20px 90px; }
+  .tower-explorer { gap: 40px; padding: 48px 20px 80px; }
   .tower-explorer__intro { grid-template-columns: 1fr; gap: 42px; }
   .tower-explorer__title { font-size: clamp(76px, 22vw, 150px); }
   .explorer { grid-template-columns: 1fr; gap: 32px; }
-  .explorer__frame { height: min(68vh, 600px); }
+  .explorer__frame { height: min(78vh, 680px); }
   .tower-explorer__right { width: 100%; }
   .elevator__grid { grid-template-columns: repeat(5, 44px); gap: 7px; }
   .elevator__btn { width: 44px; height: 44px; font-size: 18px; }
+}
+
+@media (min-width: 1601px) {
+  .explorer__frame {
+    height: min(90vh, 1040px);
+  }
 }
 
