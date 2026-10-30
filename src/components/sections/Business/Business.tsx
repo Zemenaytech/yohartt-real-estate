@@ -4,10 +4,10 @@ export default function BusinessSpaces() {
   return (
 <section id="BusinessSpaces" className="relative z-1">
   <div className="trigger relative flex min-h-screen w-full items-stretch overflow-clip py-30 max-xl:py-20 max-lg:pt-40 max-lg:pb-30">
-    <Image src={business} 
-    alt="Location" 
-    className="background absolute top-1/3 h-[calc(100%+20rem)] w-full -translate-y-1/2 object-cover" 
-    loading="eager"
+    <Image src={business}
+    alt="Location"
+    className="background absolute top-1/3 h-[calc(100%+20rem)] w-full -translate-y-1/2 object-cover"
+    
     />
     <div className="wrapper relative z-1 flex flex-col justify-between max-lg:gap-30 max-md:gap-12">
       <h2 className="hero text-cream-dark uppercase max-xl:w-full max-lg:whitespace-normal w-3/4 max-md:w-3/4">Office spaces and retails</h2>

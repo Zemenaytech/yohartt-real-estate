@@ -97,7 +97,7 @@ export function AmenitiesDetailsSection() {
           alt={activeAmenity.alt}
           fill
           sizes="58vw"
-          priority={activeIndex === 0}
+          // priority={activeIndex === 0}
         />
       </div>
 

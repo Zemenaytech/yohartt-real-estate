@@ -4,10 +4,10 @@ export default function Amenities() {
   return (
 <section id="Amenities" className="relative z-1">
   <div className="trigger relative flex min-h-screen w-full items-stretch overflow-clip">
-    <Image src={amenities} 
-    alt="Amenities" 
-    className="background absolute top-1/3 h-[calc(100%+20rem)] w-full -translate-y-1/2 object-cover max-md:object-[60%_50%]" 
-    loading="eager"/>
+    <Image src={amenities}
+    alt="Amenities"
+    className="background absolute top-1/3 h-[calc(100%+20rem)] w-full -translate-y-1/2 object-cover max-md:object-[60%_50%]"
+    />
     <div className="wrapper relative z-1 flex items-stretch max-lg:flex-col-reverse max-md:flex-col">
       <div className="flex w-1/3 flex-col items-start justify-between py-30 max-lg:w-2/3 max-lg:flex-col-reverse max-lg:pt-0 max-lg:pb-15 max-md:w-3/4 max-md:pt-10 max-md:pb-5">
       <div className="videoWrap relative aspect-[1.43/1] w-full overflow-hidden rounded-[1.25rem]">

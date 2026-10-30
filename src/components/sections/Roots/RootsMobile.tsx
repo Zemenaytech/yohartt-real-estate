@@ -27,7 +27,7 @@ export default function RootsMobile() {
 
             <div className="roots-image absolute bottom-0 left-6 z-2 w-70 max-w-none">
               <div className="h-auto w-full mask-[url('/home/roots/mask1.svg')] mask-size-[95%] mask-center mask-no-repeat [-webkit-mask-image:url('/home/roots/mask1.svg')] [-webkit-mask-size:95%]">
-                <video src="/media/home/roots/image1.mp4" muted loop playsInline autoPlay preload="metadata" className="h-full w-full translate-y-1/10 scale-130 object-cover" aria-label="A calm residential living scene" />
+                <video src="/media/home/roots/image1.mp4" muted loop playsInline autoPlay preload="none" className="h-full w-full translate-y-1/10 scale-130 object-cover" aria-label="A calm residential living scene" />
               </div>
             </div>
           </div>
