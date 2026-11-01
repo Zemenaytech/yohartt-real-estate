@@ -9,6 +9,7 @@ import amenityFitness from '@/assets/home/amenities-options/fitness.webp';
 import { Instrument_Serif } from 'next/font/google';
 
 const amenitiesFont = Instrument_Serif({
+  preload: false,
   subsets: ['latin'],
   weight: '400',
   style: ['normal', 'italic'],

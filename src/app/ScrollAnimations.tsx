@@ -49,7 +49,7 @@ export default function ScrollAnimations() {
 
       const lenis = new Lenis({
         smoothWheel: true,
-        duration: 2,
+        duration: 1.4,
       });
 
       lenis.stop();
@@ -166,7 +166,7 @@ export default function ScrollAnimations() {
             y: isHeading ? "2rem" : "1rem",
             x: "0rem",
             duration: 0.9,
-            delay: isHeading ? 0.5 : 0,
+            delay: isHeading ? 0.25 : 0,
             ease: "power3.out",
             stagger: isHeading ? 0.025 : 0.06,
             scrollTrigger: {
@@ -838,13 +838,13 @@ export default function ScrollAnimations() {
               },
             })
             .to(".background", {
-              top: "+=20rem",
+              y: "+=20rem",
               ease: "power1.inOut",
             })
             .to(
               ".portrait",
               {
-                top: "+=10rem",
+                y: "+=10rem",
                 ease: "power1.inOut",
               },
               "<"
@@ -1248,11 +1248,11 @@ export default function ScrollAnimations() {
           );
 
         gsap.set(".installment-parallax", {
-          top: isMobile ? "-=5rem" : "-=10rem",
+          y: isMobile ? "-=5rem" : "-=10rem",
         });
 
         gsap.to(".installment-parallax", {
-          top: isMobile ? "+=10rem" : "+=20rem",
+          y: isMobile ? "+=10rem" : "+=20rem",
           scrollTrigger: {
             trigger: ".installment-trigger",
             scrub: true,
