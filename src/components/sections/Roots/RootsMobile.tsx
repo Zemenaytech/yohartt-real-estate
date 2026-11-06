@@ -29,7 +29,7 @@ export default function RootsMobile() {
 
           <div className="roots-screen2 pointer-events-none absolute inset-0 z-10 flex h-full w-full items-end px-6 pb-30">
             <div className="w-full">
-              <p className="roots-paragraph heading-2 text-[2.5rem] text-sand">At Yohartt Tower, each residence is crafted not merely for living, but as a space that evolves alongside you</p>
+              <p className="roots-paragraph heading-2 text-[2.5rem] text-sand">At Yohart Tower, each residence is crafted not merely for living, but as a space that evolves alongside you</p>
               <Link href="#Residences" className="roots-button pointer-events-auto mt-10 inline-block w-full">
                 <span className="menu inline-flex h-14 w-full items-center justify-center rounded-full border border-green bg-transparent px-5 py-5 uppercase text-cream transition-colors hover:bg-green/40">Explore residences <span aria-hidden="true" className="ml-4">→</span></span>
               </Link>

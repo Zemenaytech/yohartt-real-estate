@@ -177,7 +177,11 @@ export default function Footer() {
             <p className={bandLabelClass}>Contact</p>
             <p className="paragraph">For direct inquiries, our team is available at</p>
             <a href={site.phone.href} className="heading-3 hover:text-accent mt-2 inline-block transition-colors">{site.phone.display}</a>
-            <p className="paragraph mt-2 text-cream/70">Megenagna, {site.city}</p>
+            <div className="mt-2 space-y-1 text-cream/70">
+              {site.locations.map((loc) => (
+                <p key={loc} className="paragraph">{loc}</p>
+              ))}
+            </div>
           </div>
         </div>
         <div className="wrapper">

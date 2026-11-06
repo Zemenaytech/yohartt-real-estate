@@ -24,7 +24,7 @@ const INITIAL_POINTS = toAttr(floorOf(DEFAULT_FLOOR).points);
  * Hover/tap a floor on the rendering (or use the elevator buttons) to spotlight it.
  * "Enquire" hands the chosen floor to the contact form via EnquiryContext.
  */
-export function FloorExplorer({ interest = 'Yohartt Tower', children }: { interest?: string; children?: ReactNode }) {
+export function FloorExplorer({ interest = 'Yohart Tower', children }: { interest?: string; children?: ReactNode }) {
   const { setFloor, setInterest } = useEnquiry();
   const [selected, setSelected] = useState(DEFAULT_FLOOR);
   const [hovered, setHovered] = useState<string | null>(null);
@@ -92,7 +92,7 @@ export function FloorExplorer({ interest = 'Yohartt Tower', children }: { intere
         >
           <Image
             src={towerRender}
-            alt="Yohartt Tower rendering with each floor selectable"
+            alt="Yohart Tower rendering with each floor selectable"
             sizes="(max-width: 899px) 90vw, (max-width: 1440px) 560px, 680px"
             priority
           />

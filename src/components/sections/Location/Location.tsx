@@ -6,7 +6,7 @@ export default function Location(){
             <div className="trigger relative flex min-h-screen w-full items-stretch overflow-clip">
                 <Image
                 src={location}
-                alt="The Addis Ababa skyline from the Yohartt Tower site in Megenagna, above a reinforced slab"
+                alt="The Addis Ababa skyline from the Yohart Tower site in Megenagna, above a reinforced slab"
                 className="background absolute top-1/3 h-[calc(100%+20rem)] w-full -translate-y-1/2 object-cover object-[50%_40%]"
                 loading="eager"
                 sizes="100vw"
@@ -39,7 +39,7 @@ export default function Location(){
                 <div className="flex w-7/12 flex-col items-end justify-between py-24 max-2xl:w-2/3 max-2xl:py-16 max-lg:h-full max-lg:w-full max-lg:pt-20 max-lg:pb-10 max-md:items-start max-md:gap-10 max-md:pt-16">
                 <p className="paragraph text-cream max-w-lg text-[max(1.25rem,16px)] leading-[1.45] [text-shadow:0_1px_14px_rgba(0,0,0,0.35)] max-2xl:max-w-md max-md:w-full">
                 At one of Addis Ababa&#x27;s most dynamic and prestigious locations, 
-                around Semit, Yohartt Tower is taking shape
+                around Semit, Yohart Tower is taking shape
                  as a contemporary residential and commercial development that seamlessly brings
                   together refined architecture, everyday comfort, and enduring value.
                 </p>

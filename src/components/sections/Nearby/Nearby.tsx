@@ -352,19 +352,19 @@ export function NearbySection() {
           <div className="relative mt-8 aspect-[1300/800] w-full overflow-visible">
             <Image
               src={mapBase}
-              alt="Map of Summit and Semit district around Yohartt Tower"
+              alt="Map of Summit and Semit district around Yohart Tower"
               fill
               priority
               sizes="100vw"
               className="pointer-events-none object-contain"
             />
 
-            {/* Yohartt Tower badge (simplified for mobile) */}
+            {/* Yohart Tower badge (simplified for mobile) */}
             <div
               className="pointer-events-none absolute z-20 flex flex-col items-center"
               style={{
-                left: '44.2%',
-                top: '49.5%',
+                left: '46.7%',
+                top: '56.2%',
                 transform: 'translate(-50%, -100%)',
               }}
             >
@@ -387,7 +387,7 @@ export function NearbySection() {
                 </svg>
                 <div>
                   <p className="text-[9px] font-bold tracking-wider text-[#FCFAF0] uppercase">
-                    Yohartt Tower
+                    Yohart Tower
                   </p>
                   <p className="text-[7px] text-[#e8dac7] font-medium">
                     Summit · Semit District
@@ -629,7 +629,7 @@ export function NearbySection() {
               <div className="absolute inset-0">
                 <Image
                   src={mapBase}
-                  alt="Axonometric Perspective Map of Summit and Semit district around Yohartt Tower"
+                  alt="Axonometric Perspective Map of Summit and Semit district around Yohart Tower"
                   fill
                   priority
                   sizes="72vw"
@@ -637,18 +637,18 @@ export function NearbySection() {
                 />
               </div>
 
-              {/* CENTER LOCATION BADGE: Yohartt Tower · Summit & Semit */}
+              {/* CENTER LOCATION BADGE: Yohart Tower · Summit & Semit */}
               <div
                 className="pointer-events-none absolute z-20 flex flex-col items-center"
                 style={{
-                  left: '44.2%',
-                  top: '49.5%',
+                  left: '46.7%',
+                  top: '56.2%',
                   transform: 'translate(-50%, -100%) translateZ(28px)',
                 }}
               >
                 {/* Floating Badge */}
                 <div className="flex items-center gap-2 rounded-lg border border-[#a88956] bg-[#7d6342] px-3.5 py-2 shadow-xl">
-                  {/* Yohartt Emblem */}
+                  {/* Yohart Emblem */}
                   <svg
                     width="18"
                     height="18"
@@ -667,7 +667,7 @@ export function NearbySection() {
                   </svg>
                   <div>
                     <p className="text-[11px] font-bold tracking-wider text-[#FCFAF0] uppercase">
-                      Yohartt Tower
+                      Yohart Tower
                     </p>
                     <p className="text-[9px] text-[#e8dac7] font-medium">
                       Summit · Semit District

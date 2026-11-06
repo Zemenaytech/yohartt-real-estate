@@ -11,13 +11,17 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000',
   city: 'Addis Ababa',
   country: 'Ethiopia',
+  locations: [
+    'Megenagna, Addis Ababa',
+    'Semit (around Cambridge Academy), Addis Ababa',
+  ],
   phone: { display: '+251 910 650 561', href: 'tel:+251910650561' },
   email: 'yoharttradingplc@gmail.com',
   /** International format, digits only — used for wa.me links. */
   whatsapp: '+251 910 650 561',
   socials: [
     { name: 'Instagram', href: 'https://www.instagram.com/yohartproperties/' },
-    { name: 'Facebook', href: 'https://www.facebook.com/yohartproperties' },
+    { name: 'Facebook', href: 'https://www.facebook.com/share/1bw76VBTq9/?mibextid=wwXIfr' },
   ],
 } as const;
 
@@ -35,7 +39,7 @@ export const navLinks = [
 ] as const;
 
 export const enquiryInterests = [
-  'Yohartt Tower',
+  'Yohart Tower',
   'Completed units',
   'Investment opportunities',
   'Something else',

@@ -18,7 +18,7 @@ function openEmailApp(e: Enquiry) {
 }
 
 function openWhatsApp(e: Enquiry) {
-  const text = encodeURIComponent(`Hello Yohartt, I'd like to make an enquiry.\n\n${enquiryText(e)}`);
+  const text = encodeURIComponent(`Hello Yohart, I'd like to make an enquiry.\n\n${enquiryText(e)}`);
   window.open(`https://wa.me/${site.whatsapp}?text=${text}`, '_blank', 'noopener');
 }
 

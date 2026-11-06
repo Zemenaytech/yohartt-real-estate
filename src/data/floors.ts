@@ -1,5 +1,5 @@
 /**
- * Yohartt Tower floors — edit zone names, descriptions and highlights here.
+ * Yohart Tower floors — edit zone names, descriptions and highlights here.
  *
  * Shapes are polygons traced on the 1536×2752 rendering (src/assets/img/tower-render.png),
  * in that image's pixel coordinates. If the rendering changes, re-trace FLOOR_SHAPES.
@@ -28,7 +28,7 @@ const ZONES = {
     chips: ['Private balcony', 'Floor-to-ceiling glazing', 'Lift access'],
   },
   podium: {
-    name: 'Podium level',
+    name: 'Residences',
     desc: 'A fully glazed level above the arrival court, set aside for lounge and amenity space.',
     chips: ['Full-glass frontage', 'Street-facing', 'Shared amenities'],
   },

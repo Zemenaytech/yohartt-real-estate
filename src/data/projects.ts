@@ -46,18 +46,18 @@ export type Project = {
 export const photos = {
   towerRender: {
     src: towerRender,
-    alt: 'Architectural rendering of Yohartt Tower, a slim white residential tower with full-width balconies at dusk',
-    caption: 'Yohartt Tower, artist impression',
+    alt: 'Architectural rendering of Yohart Tower, a slim white residential tower with full-width balconies at dusk',
+    caption: 'Yohart Tower, artist impression',
   },
   towerDusk: {
     src: towerDusk,
-    alt: 'Rendering of Yohartt Tower at dusk: a slim white residential tower with full-width balconies above a tree-lined street',
-    caption: 'Yohartt Tower, artist impression',
+    alt: 'Rendering of Yohart Tower at dusk: a slim white residential tower with full-width balconies above a tree-lined street',
+    caption: 'Yohart Tower, artist impression',
   },
   completed: {
     src: completedResidence,
     alt: 'A completed mid-rise residential building with stone-look cladding, large black-framed windows and a gated entrance',
-    caption: 'Recently completed Yohartt residential building',
+    caption: 'Recently completed Yohart residential building',
   },
   interior: {
     src: interior1,
@@ -107,28 +107,29 @@ export const photos = {
  */
 export const projects: Project[] = [
   {
-    slug: 'yohartt-tower',
-    name: 'Yohartt Tower',
-    status: 'Accepting enquiries',
-    type: 'Residential tower',
-    location: 'Addis Ababa, Ethiopia',
-    tagline: 'Fifteen levels of light-filled homes above a landscaped arrival court.',
-    summary:
-      'A G+15 residential tower with full-width glazing and a private balcony on every level. Explore it floor by floor below, then tell us which level you would like to call home.',
-    cover: photos.towerDusk,
-    specs: [
-      { label: 'Configuration', value: 'G+15' },
-      { label: 'Type', value: 'Residential apartments' },
-      { label: 'Parking', value: 'Covered, ground level' },
-      { label: 'Facade', value: 'Full-width glazing & balconies' },
-      { label: 'Location', value: 'Addis Ababa' },
-    ],
-    highlights: [
-      'Private balcony on residential levels',
-      'Floor-to-ceiling glazing',
-      'Sky residences',
-      'Covered parking and landscaped arrival court',
-    ],
+    slug: 'the-tower',
+  name: 'The Tower',
+  status: 'Under construction',
+  type: 'Residential tower',
+  location: 'Addis Ababa, Ethiopia',
+  tagline: 'Rising in Addis Ababa: a new residential landmark with a balcony on every level.',
+  summary:
+    'A residential tower with full-width glazing and a private balcony on every level.',
+  cover: photos.towerDusk,
+  specs: [
+    { label: 'Status', value: 'Under construction' },
+    { label: 'Type', value: 'Residential tower' },
+    { label: 'Glazing', value: 'Full-width glazing' },
+    { label: 'Outdoor space', value: 'Private balcony on every level' },
+    { label: 'Arrival', value: 'Landscaped arrival court' },
+    { label: 'Location', value: 'Addis Ababa' },
+  ],
+  highlights: [
+    'Full-width glazing for natural light',
+    'Private balcony on every level',
+    'Landscaped arrival court',
+    'Investment opportunities open',
+  ],
     gallery: [photos.towerRender, photos.interior, photos.balconyView, photos.entranceLobby],
     progress: [
       {
@@ -147,16 +148,16 @@ export const projects: Project[] = [
         text: 'Ready-mix concrete is pumped, spread and vibrated across the slab by a dedicated crew for a solid, monolithic floor.',
       },
     ],
-    enquiryInterest: 'Yohartt Tower',
-    floorExplorer: true,
+    enquiryInterest: 'Investment opportunities',
+    floorExplorer: false,
   },
   {
-    slug: 'completed-residence',
-    name: 'Completed Residence',
-    status: 'Completed',
+    slug: 'yohart-tower',
+    name: 'Yohart Tower',
+    status: 'Accepting enquiries',
     type: 'Residential apartments',
     location: 'Addis Ababa, Ethiopia',
-    tagline: 'Not a rendering. A finished building, ready for residents.',
+    tagline: 'Fifteen levels of light-filled homes above a landscaped arrival court.',
     summary:
       'Textured render and stone-look cladding, generous black-framed windows, private balconies and a secure gated entrance. Completed and handed over.',
     cover: photos.completed,
@@ -174,14 +175,15 @@ export const projects: Project[] = [
       'Covered ground-level entry',
     ],
     gallery: [photos.completed, photos.entranceLobby, photos.interior, photos.bedroom],
-    enquiryInterest: 'Completed units',
-    floorExplorer: false,
+    enquiryInterest: 'Yohart Tower',
+    floorExplorer: true,
     walkthrough: {
       src: '/media/projects/completed-residence-walkthrough.mp4',
       label:
         'Walkthrough of a finished apartment: cove-lit ceilings, a feature TV wall and wide windows over the city',
       caption: 'Interior walkthrough',
     },
+  
   },
 ];
 

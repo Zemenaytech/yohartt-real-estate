@@ -20,10 +20,10 @@ return(
     <div className="screen1 absolute inset-0 h-full w-full">
     <div className="wrapper flex h-full flex-col justify-center">
     <p className="kicker mobile-preheading1 text-accent mb-5 uppercase">
-    YOHARTT PROPERTIES VISION
+    YOHART PROPERTIES VISION
     </p>
     <h2 className="heading-2 mobile-heading1 text-cream text-[2.25rem]">
-        The visual identity of Yohartt Properties is defined by architectural elegance and generous light,
+        The visual identity of Yohart Properties is defined by architectural elegance and generous light,
          creating homes that elevate the skyline of Addis Ababa.
     </h2>
     </div>
@@ -80,7 +80,7 @@ return(
     <div className="screen3 absolute inset-0 h-full w-full">
     <div className="wrapper flex h-full items-center">
     <h2 className="heading-2 mobile-heading2 text-cream text-[2.25rem]">
-        Yohartt isn&#x27;t just building for the skyline; we engineer enduring homes designed around structural precision, quality materials, and transparent craftsmanship.
+        Yohart isn&#x27;t just building for the skyline; we engineer enduring homes designed around structural precision, quality materials, and transparent craftsmanship.
     </h2>
 
     </div>
@@ -141,8 +141,8 @@ return(
     <div className="wrapper flex h-full flex-col justify-center gap-15 px-2">
     <h2 className="hero mobile-heading3 text-cream leading-[1.1] uppercase">A New Chapter in Prestigious Living</h2>
     <div className="w-3/4 self-end">
-    <p className="paragraph mobile-paragraph1 text-cream">A clear architectural vision, prime Addis Ababa locations, and carefully engineered residences make Yohartt Properties a destination where quality, comfort, and long-term value naturally converge.</p>
-    <Link className="mobile-link link text-accent mt-10 inline-block uppercase" href="/#tower">Explore Yohartt Tower</Link>
+    <p className="paragraph mobile-paragraph1 text-cream">A clear architectural vision, prime Addis Ababa locations, and carefully engineered residences make Yohart Properties a destination where quality, comfort, and long-term value naturally converge.</p>
+    <Link className="mobile-link link text-accent mt-10 inline-block uppercase" href="/#tower">Explore Yohart Tower</Link>
     </div>
     </div>
     </div>

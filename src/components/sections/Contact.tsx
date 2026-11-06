@@ -14,7 +14,7 @@ export function ContactSection() {
             Find your <em>place.</em>
           </h2>
           <p className="contact__lead" data-reveal="">
-            Tell us what you are looking for and our team will help you find the right Yohartt opportunity.
+            Tell us what you are looking for and our team will help you find the right Yohart opportunity.
           </p>
           <ul className="contact__list" data-reveal="">
             <li>

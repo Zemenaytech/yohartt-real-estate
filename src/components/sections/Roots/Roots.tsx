@@ -27,7 +27,7 @@ export default function Roots() {
         <div className="roots-kicker-wrap wrapper grid grid-cols-12 items-center gap-x-6 max-lg:grid-cols-1 max-lg:gap-y-20">
           <div className="col-span-5 col-start-2 max-xl:col-start-1 max-lg:col-span-1">
             <p className="heading-2 text-sand max-xl:text-[3.25rem] max-lg:text-[3rem]">
-              At Yohartt Tower, each residence is crafted not merely for
+              At Yohart Tower, each residence is crafted not merely for
               living, but as a space that evolves alongside you
             </p>
 

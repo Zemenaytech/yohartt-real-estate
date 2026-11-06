@@ -4,9 +4,7 @@ import { LightboxLink } from '@/components/LightboxLink';
 import { LongArrow } from '@/components/icons';
 import { photos, type ProgressStage } from '@/data/projects';
 
-// Real photos from the Yohartt Tower site, in the same collage as the
-// Projects page. Each photo here is used only once on the home page (the
-// rebar view is the Location background).
+
 const STAGES: ProgressStage[] = [
   {
     photo: photos.structurePump,
@@ -33,7 +31,7 @@ export default function Progress() {
           <div>
             <p className="project-eyebrow">
               <span>(On site)</span>
-              Yohartt Tower / construction in progress
+               Construction in progress
             </p>
             <h2 id="home-progress-title" className="project-progress__title project-heading">
               Progress <em>on site</em>
@@ -41,7 +39,7 @@ export default function Progress() {
           </div>
           <div className="project-progress__aside">
             <p className="project-copy">
-              Real photos from the site, not renderings. Yohartt Tower is rising floor by floor
+              Real photos from the site, not renderings. The Tower is rising floor by floor
               behind the British Embassy in Megenagna.
             </p>
             <Link href="/projects" className="project-text-link project-progress__link">

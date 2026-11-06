@@ -51,7 +51,7 @@ export default function ProjectsPage() {
 
             <div className="project-intro__bottom">
               <div>
-                <p className="project-eyebrow project-fade">Portfolio &amp; developments</p>
+
                 <h1 id="projects-title" className="hero project-intro__title project-heading">
                   Our <em>Projects</em>
                 </h1>

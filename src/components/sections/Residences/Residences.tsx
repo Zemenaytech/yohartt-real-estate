@@ -38,7 +38,7 @@ export default function Residences() {
             </div>
            <div className="ml-auto flex max-w-lg items-center self-stretch max-2xl:max-w-md max-lg:w-full">
   <p className="paragraph text-golden max-lg:w-full">
-    Designed with contemporary living in mind, each apartment at Yohartt Tower balances functionality, comfort, and aesthetics. Open-plan layouts, excellent natural light, refined materials, and carefully considered details create spaces that feel both welcoming and enduring.
+    Designed with contemporary living in mind, each apartment at Yohart Tower balances functionality, comfort, and aesthetics. Open-plan layouts, excellent natural light, refined materials, and carefully considered details create spaces that feel both welcoming and enduring.
   </p>
 </div>
             </div>

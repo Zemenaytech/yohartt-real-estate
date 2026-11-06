@@ -14,7 +14,8 @@ export default function Installment() {
                 loading="lazy"
                 decoding="async"
                 fill
-                className="installment-parallax object-cover object-center max-lg:hidden"
+                sizes="(max-width: 1024px) 100vw, 55vw"
+                className="installment-parallax object-cover object-[61.5%_center] max-lg:hidden"
               />
               <Image
                 src={imageMobile}
@@ -22,7 +23,8 @@ export default function Installment() {
                 loading="lazy"
                 decoding="async"
                 fill
-                className="installment-parallax object-cover object-center hidden max-lg:block"
+                sizes="(max-width: 1024px) 100vw, 55vw"
+                className="installment-parallax object-cover object-[61.5%_center] hidden max-lg:block"
               />
             </div>
           </div>

@@ -1218,10 +1218,6 @@ export default function ScrollAnimations() {
       /* ======================= Installment ========================= */
 
       inCtx(section("Installment"), () => {
-        const isMobile = window.matchMedia(
-          "(max-width: 600px)"
-        ).matches;
-
         gsap
           .timeline({
             scrollTrigger: {
@@ -1251,7 +1247,7 @@ export default function ScrollAnimations() {
           )
           .fromTo(
             ".installment-reveal-image .reveal-image-zoom",
-            { scale: 1.1 },
+            { scale: 1.05 },
             {
               scale: 1,
               duration: 1.2,
@@ -1259,18 +1255,6 @@ export default function ScrollAnimations() {
             },
             0
           );
-
-        gsap.set(".installment-parallax", {
-          top: isMobile ? "-=5rem" : "-=10rem",
-        });
-
-        gsap.to(".installment-parallax", {
-          top: isMobile ? "+=10rem" : "+=20rem",
-          scrollTrigger: {
-            trigger: ".installment-trigger",
-            scrub: true,
-          },
-        });
       });
 
       /* ======================== Horizontal ========================= */

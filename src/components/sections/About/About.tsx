@@ -118,10 +118,10 @@ export function About(){
             <div className="wrapper">
             <div className="w-5/12 space-y-10 max-xl:w-1/2 max-lg:w-full">
                 <p className="kicker preheading1 text-accent uppercase">
-                    YOHARTT PROPERTIES VISION
+                    YOHART PROPERTIES VISION
                 </p>
                 <h2 className="heading-2 heading1" >
-                  The visual identity of Yohartt Properties is defined by architectural elegance and generous light, creating homes that elevate the skyline of Addis Ababa.  
+                  The visual identity of Yohart Properties is defined by architectural elegance and generous light, creating homes that elevate the skyline of Addis Ababa.  
                 </h2>
                 <div className="button1Wrap mt-20 max-xl:mt-10">
                   <Link href="/#tower">
@@ -165,7 +165,7 @@ export function About(){
         <div className="screen2 absolute inset-0 h-full w-full pt-20">
         <div className="wrapper max flex justify-end">
         <div className="w-1/2 pt-15 max-lg:w-full max-lg:pt-[40vh]">
-        <h2 className="heading-2 heading2">Yohartt isn&#x27;t just building for the skyline; we engineer enduring homes designed around structural precision, quality materials, and transparent craftsmanship.</h2>
+        <h2 className="heading-2 heading2">Yohart isn&#x27;t just building for the skyline; we engineer enduring homes designed around structural precision, quality materials, and transparent craftsmanship.</h2>
         <div className="button2Wrap mt-30 max-xl:mt-20 max-lg:mt-10">
           <Link href="/projects">
             <button
@@ -210,10 +210,10 @@ export function About(){
         <h2 className="hero heading3 w-full uppercase max-xl:text-[7.5rem] max-lg:text-[5.375rem]">A New Chapter in Prestigious Living</h2>
         <div className="w-1/2 self-end pt-25 max-xl:w-5/12 max-xl:pt-0 max-lg:w-1/2 max-lg:pt-20" >
         <p className="paragraph1 paragraph w-1/2 max-xl:w-3/5 max-lg:w-full">
-        A clear architectural vision, prime Addis Ababa locations, and carefully engineered residences make Yohartt Properties a destination where quality, comfort, and long-term value naturally converge.
+        A clear architectural vision, prime Addis Ababa locations, and carefully engineered residences make Yohart Properties a destination where quality, comfort, and long-term value naturally converge.
         </p>
         <Link className="link text-accent mt-10 inline-block" href="/#tower">
-        Explore Yohartt Tower
+        Explore Yohart Tower
         </Link>
         </div>
         </div>
