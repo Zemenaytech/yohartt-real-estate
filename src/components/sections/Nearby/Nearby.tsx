@@ -5,10 +5,11 @@ import Image from 'next/image';
 import type { StaticImageData } from 'next/image';
 
 import mapBase from '@/assets/home/around/axonometric-map.webp';
-import cambridgeAcademyImg from '@/assets/home/around/cambridge-academy.jpg';
-import saudiEmbassyImg from '@/assets/home/around/saudi-embassy.jpg';
-import pepsiFactoryImg from '@/assets/home/around/pepsi-factory.jpg';
-import sweatboxGymImg from '@/assets/home/around/sweatbox-gym.jpg';
+import britishEmbassyImg from '@/assets/home/around/british-embassy.jpg';
+import centuryMallImg from '@/assets/home/around/century-mall.jpg';
+import megenagnaTransitImg from '@/assets/home/around/megenagna-transit.jpg';
+import zefmeshMallImg from '@/assets/home/around/zefmesh-mall.jpg';
+import panoramaHotelImg from '@/assets/home/around/panorama-hotel.jpg';
 
 type Place = {
   id: string;
@@ -26,44 +27,54 @@ type Place = {
 
 const PLACES: Place[] = [
   {
-    id: 'cambridge-academy',
-    name: 'Cambridge Academy',
-    car: '3 min',
-    walk: '8 min',
-    description:
-      'A leading international British Curriculum school in Addis Ababa, delivering early years through pre-university education (IGCSE and A-Levels) with modern academic and sports facilities.',
-    image: cambridgeAcademyImg,
-    pin: { x: 16.2, y: 15.6 },
-  },
-  {
-    id: 'saudi-embassy',
-    name: 'Embassy of Saudi Arabia',
-    car: '2 min',
-    walk: '6 min',
-    description:
-      'A prestigious diplomatic compound situated along the primary boulevard, reinforcing the neighborhood’s international standing, enhanced security, and long-term residential appeal.',
-    image: saudiEmbassyImg,
-    pin: { x: 64.6, y: 33.1 },
-  },
-  {
-    id: 'pepsi-factory',
-    name: 'Summit PEPSI Factory',
-    car: '4 min',
-    walk: '12 min',
-    description:
-      'One of the Summit district’s major commercial landmarks near the eastern roundabout, anchoring regional distribution, economic activity, and urban connectivity.',
-    image: pepsiFactoryImg,
-    pin: { x: 90.8, y: 16.2 },
-  },
-  {
-    id: 'sweatbox-gym',
-    name: 'Sweatbox Performance Gym',
+    id: 'british-embassy',
+    name: 'British Embassy',
     car: '1 min',
     walk: '3 min',
     description:
-      'Addis Ababa’s premier CrossFit and high-performance training facility at Semit, offering Olympic lifting platforms, functional HIIT conditioning, coaching, and wellness recovery just steps from home.',
-    image: sweatboxGymImg,
-    pin: { x: 44.6, y: 80.0 },
+      'The historic Embassy of the United Kingdom in Addis Ababa is situated directly adjacent to the site along Comoros Street, featuring lush diplomatic parklands, top-tier security, and mature green tree canopies.',
+    image: britishEmbassyImg,
+    pin: { x: 49.0, y: 8.7 },
+  },
+  {
+    id: 'century-mall',
+    name: 'Century Mall',
+    car: '3 min',
+    walk: '8 min',
+    description:
+      "One of Megenagna's premier modern commercial destinations at Gurd Shola, hosting a multi-screen cinema, international retail boutiques, vibrant cafes, and family entertainment amenities.",
+    image: centuryMallImg,
+    pin: { x: 78.0, y: 43.2 },
+  },
+  {
+    id: 'megenagna-transit',
+    name: 'Megenagna Transit Hub',
+    car: '4 min',
+    walk: '10 min',
+    description:
+      "Addis Ababa's vital eastern transit interchange, seamlessly connecting the East-West Light Rail Transit (LRT) network with key city bus corridors, rapid taxis, and direct routes toward Bole and Kazanchis.",
+    image: megenagnaTransitImg,
+    pin: { x: 45.0, y: 56.8 },
+  },
+  {
+    id: 'zefmesh-mall',
+    name: 'Zefmesh Grand Mall',
+    car: '4 min',
+    walk: '12 min',
+    description:
+      'A bustling multi-level shopping and commercial center at the center of Megenagna, housing hundreds of specialty retailers, electronics stores, banking hubs, and traditional dining options.',
+    image: zefmeshMallImg,
+    pin: { x: 40.0, y: 48.2 },
+  },
+  {
+    id: 'panorama-hotel',
+    name: 'Panorama Hotel',
+    car: '2 min',
+    walk: '5 min',
+    description:
+      'A distinguished 4-star hospitality landmark located just south of Megenagna along Equatorial Guinea Street, offering international dining, rooftop lounges, and premium guest accommodations.',
+    image: panoramaHotelImg,
+    pin: { x: 38.0, y: 67.9 },
   },
 ];
 
@@ -352,7 +363,7 @@ export function NearbySection() {
           <div className="relative mt-8 aspect-[1300/800] w-full overflow-visible">
             <Image
               src={mapBase}
-              alt="Map of Summit and Semit district around Yohart Tower"
+              alt="Map of Megenagna and British Embassy area"
               fill
               priority
               sizes="100vw"
@@ -363,8 +374,8 @@ export function NearbySection() {
             <div
               className="pointer-events-none absolute z-20 flex flex-col items-center"
               style={{
-                left: '46.7%',
-                top: '56.2%',
+                left: '35%',
+                top: '12.5%',
                 transform: 'translate(-50%, -100%)',
               }}
             >
@@ -390,7 +401,7 @@ export function NearbySection() {
                     Yohart Tower
                   </p>
                   <p className="text-[7px] text-[#e8dac7] font-medium">
-                    Summit · Semit District
+                    Behind British Embassy
                   </p>
                 </div>
               </div>
@@ -629,7 +640,7 @@ export function NearbySection() {
               <div className="absolute inset-0">
                 <Image
                   src={mapBase}
-                  alt="Axonometric Perspective Map of Summit and Semit district around Yohart Tower"
+                  alt="Axonometric Perspective Map of Megenagna and British Embassy area"
                   fill
                   priority
                   sizes="72vw"
@@ -637,12 +648,12 @@ export function NearbySection() {
                 />
               </div>
 
-              {/* CENTER LOCATION BADGE: Yohart Tower · Summit & Semit */}
+              {/* CENTER LOCATION BADGE: Yohart Tower · Behind British Embassy Megenagna */}
               <div
                 className="pointer-events-none absolute z-20 flex flex-col items-center"
                 style={{
-                  left: '46.7%',
-                  top: '56.2%',
+                  left: '35%',
+                  top: '12.5%',
                   transform: 'translate(-50%, -100%) translateZ(28px)',
                 }}
               >
@@ -670,7 +681,7 @@ export function NearbySection() {
                       Yohart Tower
                     </p>
                     <p className="text-[9px] text-[#e8dac7] font-medium">
-                      Summit · Semit District
+                      Behind British Embassy
                     </p>
                   </div>
                 </div>

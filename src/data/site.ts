@@ -13,7 +13,6 @@ export const site = {
   country: 'Ethiopia',
   locations: [
     'Megenagna, Addis Ababa',
-    'Semit (around Cambridge Academy), Addis Ababa',
   ],
   phone: { display: '+251 910 650 561', href: 'tel:+251910650561' },
   email: 'yoharttradingplc@gmail.com',
